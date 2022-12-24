@@ -40,6 +40,8 @@ You can download a prebuilt dataset 180k from [here](https://zenodo.org/record/5
      
 
 5. For SVG to PNG:
+
+
   Linux:
   
   
@@ -50,8 +52,9 @@ You can download a prebuilt dataset 180k from [here](https://zenodo.org/record/5
   
 
   MacOS:
-  Download Inkscape https://inkscape.org
-  https://stackoverflow.com/questions/9853325/how-to-convert-a-svg-to-a-png-with-imagemagick
+  Download [Inkscape](https://inkscape.org) also see [here](https://stackoverflow.com/questions/9853325/how-to-convert-a-svg-to-a-png-with-imagemagick) 
+  
+ 
 
 
 <br />
