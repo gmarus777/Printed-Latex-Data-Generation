@@ -76,7 +76,7 @@ def _download_raw_dataset(metadata: Dict, dl_dirname: Path):
 
 
 def _download_raw_dataset_from_list(urls: List[str], dl_dirname: Path):
-    print(dl_dirname)
+
     dl_dirname.mkdir(parents=True, exist_ok=True)
     for url in urls:
         filename = dl_dirname/url[-18:]
