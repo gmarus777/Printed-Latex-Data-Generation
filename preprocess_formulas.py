@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # tokenize latex formulas
+
 import sys, os, argparse, logging, subprocess, shutil
 
 def is_ascii(str):
