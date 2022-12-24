@@ -36,13 +36,18 @@ You can download a prebuilt dataset 180k from [here](https://zenodo.org/record/5
 4. For Tex to SVG [see](https://www.npmjs.com/package/tex2svg):
 
     `sudo apt install nodejs npm`\
-    `sudo npm install --global mathjax-node-cli`\
+    `sudo npm install --global mathjax-node-cli`
      
 
 5. For SVG to PNG:
-  Linux:\
-  https://ubuntu.pkgs.org/20.04/ubuntu-universe-arm64/librsvg2-bin_2.48.2-1_arm64.deb.html\
-  `sudo apt install librsvg2-bin`\
+  Linux:
+  
+  
+  https://ubuntu.pkgs.org/20.04/ubuntu-universe-arm64/librsvg2-bin_2.48.2-1_arm64.deb.html
+  
+  
+  `sudo apt install librsvg2-bin`
+  
 
   MacOS:
   Download Inkscape https://inkscape.org
