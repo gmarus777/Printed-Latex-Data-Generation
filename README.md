@@ -1,9 +1,10 @@
 # Printed-Latex-Data-Generation
 
 Python and JS tools for creating Printed Latex Dataset via parsing Cornell's [KDDCUP](https://www.cs.cornell.edu/home/kleinber/kddcup2003.pdf)
-**Note: ArXiv, Wikipedia and stackexchange sources are coming** <br />
+**Note: ArXiv, Wikipedia and stackexchange sources are coming** 
 
 
+<br />
 <br />
 
 ## How to generate data
@@ -14,12 +15,10 @@ Final outputs
 - folder `generated_png_images` contianing PNG images
 - `corresponding_png_images.txt` each new line contains png images filename for the folder `generated_png_images`
 - `final_png_formulas.txt` each new line contains a carresponing LaTex formula
-<br />
 - folder `raw_data` containing raw downaloded data
 - folder `temporary_data` containing formulas from various stages of processing and svg images generated along the way
 
 <br />
-
 <br />
 
 COMING:
@@ -27,8 +26,10 @@ You can download a prebuilt dataset 180k from [here](https://zenodo.org/record/5
 
 
 **Note: This code is very ad-hoc and requires tinkering with the source**
+
 <br />
 <br />
+
 ## Contents
 - `Printed_Tex.py`
   - Main module 
@@ -48,3 +49,7 @@ You can download a prebuilt dataset 180k from [here](https://zenodo.org/record/5
   - Contains `generated_png_images/` folder, `corresponding_png_images.txt`  and `final_png_formulas.txt`. Also temporary folder `temporary_data` (formulas for various stages of processing and generated SVG images) and `raw_data` where raw data is downloaded.
 - `Jupyter Notebooks`
   - Contains examples of generating data using Jupyter notebooks
+
+
+<br />
+<br />
