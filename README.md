@@ -1,6 +1,8 @@
 # Printed-Latex-Data-Generation
 
 Python and JS tools for creating Printed Latex Dataset via parsing Cornell's [KDDCUP](https://www.cs.cornell.edu/home/kleinber/kddcup2003.pdf)
+
+
 **Note: ArXiv, Wikipedia and stackexchange sources are coming** 
 
 
@@ -84,3 +86,5 @@ You can download a prebuilt dataset 180k from [here](https://zenodo.org/record/7
 
 <br />
 <br />
+
+Based on https://github.com/Miffyli/im2latex-dataset
