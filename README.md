@@ -26,6 +26,28 @@ You can download a prebuilt dataset 180k from [here](https://zenodo.org/record/5
 
 
 **Note: This code is very ad-hoc and requires tinkering with the source**
+<br />
+<br />
+
+## Depenencies
+1. Tested with Python 3.9.7 and [Anaconda version 2021.11] (https://repo.anaconda.com/archive/Anaconda3-2021.11-Linux-x86_64.sh)
+2. `pip install opencv-python`
+3. `pip install smart_open`
+4. For Tex to SVG [see](https://www.npmjs.com/package/tex2svg):
+
+    `sudo apt install nodejs npm `
+    `sudo npm install --global mathjax-node-cli`
+     
+
+5. For SVG to PNG:
+  Linux:
+  https://ubuntu.pkgs.org/20.04/ubuntu-universe-arm64/librsvg2-bin_2.48.2-1_arm64.deb.html
+  `sudo apt install librsvg2-bin`
+
+  MacOS:
+  Download Inkscape https://inkscape.org
+  https://stackoverflow.com/questions/9853325/how-to-convert-a-svg-to-a-png-with-imagemagick
+
 
 <br />
 <br />
