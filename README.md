@@ -8,7 +8,7 @@ Python and JS tools for creating Printed Latex Dataset via parsing Cornell's [KD
 <br />
 
 ## How to generate data
-The easiest way is to use Jupyter Notebook `Data generation` located in `Jupyter Notebooks/`.
+The easiest way is to use Jupyter Notebook `Data generation.ipynb` located in `Jupyter Notebooks/`.
 Running it will output all the data in `Data/` folder.
 
 Final outputs
