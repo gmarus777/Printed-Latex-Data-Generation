@@ -1,6 +1,6 @@
 # Printed-Latex-Data-Generation
 
-Python and JS tools for путукфештп Printed Latex Dataset (images of tex formulas with latex labels) via parsing Cornell's [KDDCUP](https://www.cs.cornell.edu/home/kleinber/kddcup2003.pdf).
+Python and JS tools for generating Printed Latex Dataset (images of tex formulas with latex labels) via parsing Cornell's [KDDCUP](https://www.cs.cornell.edu/home/kleinber/kddcup2003.pdf).
 
 
 **Note: parsing for ArXiv, Wikipedia and Stackexchange sources are coming** 
