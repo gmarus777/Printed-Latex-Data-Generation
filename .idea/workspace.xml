@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8030c594-c08b-445c-915f-dbe1a68ba51e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jupyter Notebooks/Data generation.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Jupyter Notebooks/Data generation.ipynb" afterDir="false" />
     </list>
@@ -49,7 +48,9 @@
       <updated>1671895500968</updated>
       <workItem from="1671895503997" duration="15281000" />
       <workItem from="1671911026359" duration="2717000" />
-      <workItem from="1671916093326" duration="38000" />
+      <workItem from="1671916093326" duration="1137000" />
+      <workItem from="1671920607693" duration="189000" />
+      <workItem from="1671981323151" duration="275000" />
     </task>
     <servers />
   </component>

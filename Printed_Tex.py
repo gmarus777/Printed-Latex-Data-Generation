@@ -74,8 +74,7 @@ class Generate_Printed_Tex():
                 generate_png_from_svg = False,
                 number_png_images_to_use_in_dataset=120,
 
-                image_height = 64,
-                image_width = 512,
+
 
 
 
@@ -91,8 +90,7 @@ class Generate_Printed_Tex():
         self.number_png_images_to_use_in_dataset = number_png_images_to_use_in_dataset
 
 
-        self.image_height = image_height
-        self.image_width = image_width
+
 
 
 
