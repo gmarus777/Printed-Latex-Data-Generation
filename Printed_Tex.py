@@ -77,7 +77,6 @@ class Generate_Printed_Tex():
 
 
 
-
                  ):
 
 
