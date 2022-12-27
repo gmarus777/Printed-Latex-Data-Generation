@@ -48,8 +48,6 @@ You can download a prebuilt dataset 180k from [here](https://zenodo.org/record/7
 
 
   Linux:
-  
-  
   https://ubuntu.pkgs.org/20.04/ubuntu-universe-arm64/librsvg2-bin_2.48.2-1_arm64.deb.html
   
   
