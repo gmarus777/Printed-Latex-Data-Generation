@@ -1,7 +1,6 @@
 # Printed-Latex-Data-Generation
 
 Python and JS tools for generating Printed Latex Dataset (images of tex formulas with labels) via parsing Cornell's [KDDCUP](https://www.cs.cornell.edu/projects/kddcup/datasets.html).
-
 Also see [KDDCUP paper](https://www.cs.cornell.edu/home/kleinber/kddcup2003.pdf).
 <br />
 
@@ -49,8 +48,6 @@ You can download a prebuilt dataset 180k from [here](https://zenodo.org/record/7
 
 
   Linux:
-  
-  
   https://ubuntu.pkgs.org/20.04/ubuntu-universe-arm64/librsvg2-bin_2.48.2-1_arm64.deb.html
   
   
