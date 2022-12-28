@@ -88,4 +88,4 @@ You can download a prebuilt dataset 180k from [here](https://zenodo.org/record/7
 <br />
 <br />
 
-Based on https://github.com/Miffyli/im2latex-dataset
+Idea is based on https://github.com/Miffyli/im2latex-dataset
