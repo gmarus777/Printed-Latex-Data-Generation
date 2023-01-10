@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8030c594-c08b-445c-915f-dbe1a68ba51e" name="Default Changelist" comment="" />
+    <list default="true" id="8030c594-c08b-445c-915f-dbe1a68ba51e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svg_to_png.py" beforeDir="false" afterPath="$PROJECT_DIR$/svg_to_png.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +19,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="2JMkmfRAt98hoiLyWeq8oDETUD0" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -48,6 +59,12 @@
       <workItem from="1671916093326" duration="1137000" />
       <workItem from="1671920607693" duration="189000" />
       <workItem from="1671981323151" duration="413000" />
+      <workItem from="1672063838796" duration="34000" />
+      <workItem from="1672074326602" duration="1000" />
+      <workItem from="1672421120991" duration="59000" />
+      <workItem from="1672458140206" duration="752000" />
+      <workItem from="1672504480401" duration="473000" />
+      <workItem from="1673388702606" duration="570000" />
     </task>
     <servers />
   </component>
