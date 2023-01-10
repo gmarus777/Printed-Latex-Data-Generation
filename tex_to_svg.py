@@ -18,7 +18,7 @@ MAX_NUMBER_TO_RENDER = 100  # 150*1000
 
 
 
-THREADS = 10
+THREADS = 64
 
 ROOT_DIRNAME = Path(__file__).resolve().parents[0]  # gives the root directory
 DATA_DIRNAME = ROOT_DIRNAME / "Data"
