@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8030c594-c08b-445c-915f-dbe1a68ba51e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tex_to_svg.py" beforeDir="false" afterPath="$PROJECT_DIR$/tex_to_svg.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +63,7 @@
       <workItem from="1672421120991" duration="59000" />
       <workItem from="1672458140206" duration="752000" />
       <workItem from="1672504480401" duration="473000" />
-      <workItem from="1673388702606" duration="1535000" />
+      <workItem from="1673388702606" duration="2425000" />
     </task>
     <servers />
   </component>

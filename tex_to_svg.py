@@ -14,7 +14,7 @@ from pathlib import Path
 import subprocess
 
 # Max number of formulas included
-MAX_NUMBER_TO_RENDER = 100  # 150*1000
+MAX_NUMBER_TO_RENDER = 250*1000
 
 
 
