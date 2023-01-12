@@ -14,11 +14,11 @@ from pathlib import Path
 import subprocess
 
 # Max number of formulas included
-MAX_NUMBER_TO_RENDER = 250*1000
+MAX_NUMBER_TO_RENDER = 400*1000
 
 
 
-THREADS = 64
+THREADS = 63
 
 ROOT_DIRNAME = Path(__file__).resolve().parents[0]  # gives the root directory
 DATA_DIRNAME = ROOT_DIRNAME / "Data"
