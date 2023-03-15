@@ -34,7 +34,12 @@ You can download a prebuilt dataset 230k from [here](https://zenodo.org/record/7
 Some Dataset im2latex 230k Characteristics:
 - images are of varying sizes with maximum Height of 431 and maximum Width of 6816
 - sizes of formulas vary from 6 to 970 (tokenized length) with distribution below
+
 ![alt text](histogram.png)
+
+- comes with a vocabulary 230k.json of size 579, which was generated on a bigger Dataset of around 330k
+- sample image:
+![alt text](sample.png)
 
 
 
