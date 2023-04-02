@@ -21,7 +21,7 @@ from configs import PrintedLatexDataConfig
 
 
 # TODO: integrate the variables below
-MAX_FORMULA_LENGTH_in_Bytes = 1024
+MAX_FORMULA_LENGTH_in_Bytes = 2048
 MIN_FORMULA_LENGTH_BYTES = 40
 
 
