@@ -5,6 +5,7 @@ Also see [KDDCUP paper](https://www.cs.cornell.edu/home/kleinber/kddcup2003.pdf)
 <br />
 
 **Note: parsing for ArXiv, Wikipedia and Stackexchange sources are coming.** 
+**Note: One can use any .tar files with LaTex formulas to parse, need to manually add it to the folder.** 
 
 
 <br />
@@ -26,8 +27,23 @@ Final outputs
 <br />
 <br />
 
+## Generated Dataset im2latex 230k
 
-You can download a prebuilt dataset 180k from [here](https://zenodo.org/record/7525894#.Y78raS2B2Lc).
+You can download a prebuilt dataset 230k from [here](https://zenodo.org/record/7738969#.ZBJJSi-B2Lc).
+
+Some Dataset im2latex 230k Characteristics:
+- images are of varying sizes with maximum Height of 431 and maximum Width of 6816
+- sizes of formulas vary from 6 to 970 (tokenized length) with distribution below
+
+![alt text](histogram.png)
+
+- comes with a vocabulary 230k.json of size 579, which was generated on a bigger Dataset of around 330k
+- sample image:
+![alt text](sample.png)
+
+
+
+
 
 
 **Note: This code is very ad-hoc and requires tinkering with the source**
