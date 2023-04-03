@@ -20,7 +20,7 @@ from configs import PrintedLatexDataConfig
 # Max number of formulas included
 # MAX_NUMBER_TO_RENDER = 50  # 150*1000
 
-THREADS = 127
+THREADS = 95
 PNG_WIDTH = 512
 PNG_HEIGHT = 64
 
