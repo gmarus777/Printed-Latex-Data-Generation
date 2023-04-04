@@ -172,8 +172,8 @@ def svg_to_png(images_and_formulas):
 
 
     #png_generation_rsvg = f" rsvg-convert -b white -w {PNG_WIDTH} -h {PNG_HEIGHT}  temporary_data/generated_svg_images/{image_name} -o generated_png_images/{image_name[:-4]}.png "
-    # --dpi-x=96 --dpi-y=96 or  --width=100 --height=200 --keep-aspect-ratio
-    png_generation_rsvg = f" rsvg-convert --dpi-x=600 --dpi-y=600 -b white  temporary_data/generated_svg_images/{image_name} -o generated_png_images/{image_name[:-4]}.png "
+    # --dpi-x=96 --dpi-y=96 or  --width=3in --height=1in --keep-aspect-ratio --dpi-x=300 --dpi-y=300
+    png_generation_rsvg = f" rsvg-convert  --width=3in --height=1in --keep-aspect-ratio --dpi-x=300 --dpi-y=300 -b white  temporary_data/generated_svg_images/{image_name} -o generated_png_images/{image_name[:-4]}.png "
 
 
 
