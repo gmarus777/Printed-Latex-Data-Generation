@@ -12,7 +12,7 @@ class PrintedLatexDataConfig:
     CHROME_RAW_DATA_DIRNAME = DATA_DIRNAME /  "raw_data" / "chrome"
     UNPROCESSED_FORMULA_FILENAME =  DATA_DIRNAME /  "not_normalized" / "formulas.txt"
     NORMALIZED_FORMULAS_DIR =  DATA_DIRNAME / "temporary_data"
-    FORMULAS_PATH_NO_TMP = NORMALIZED_FORMULAS_DIR / "formulas.norm.txt.tmp"
+    FORMULAS_PATH_NO_TMP = NORMALIZED_FORMULAS_DIR / "formulas.norm.txt"
     PREPROCESS_FORMULAS_SCRIPT_PATH = ROOT_DIRNAME / "preprocess_formulas.py"
     GENERATED_SVG_IMAGES_DIR_NAME = NORMALIZED_FORMULAS_DIR / "generated_svg_images"
     GENERATED_PNG_DIR_NAME = DATA_DIRNAME / "generated_png_images"
