@@ -20,7 +20,7 @@ from configs import PrintedLatexDataConfig
 # Max number of formulas included
 # MAX_NUMBER_TO_RENDER = 50  # 150*1000
 
-THREADS = 95
+THREADS = 7
 PNG_WIDTH = 512
 PNG_HEIGHT = 64
 
@@ -173,7 +173,7 @@ def svg_to_png(images_and_formulas):
 
     #png_generation_rsvg = f" rsvg-convert -b white -w {PNG_WIDTH} -h {PNG_HEIGHT}  temporary_data/generated_svg_images/{image_name} -o generated_png_images/{image_name[:-4]}.png "
     # --dpi-x=96 --dpi-y=96
-    png_generation_rsvg = f" rsvg-convert --dpi-x=250 --dpi-y=250 -b white  temporary_data/generated_svg_images/{image_name} -o generated_png_images/{image_name[:-4]}.png "
+    png_generation_rsvg = f" rsvg-convert --dpi-x=500 --dpi-y=500 -b white  temporary_data/generated_svg_images/{image_name} -o generated_png_images/{image_name[:-4]}.png "
 
 
 
