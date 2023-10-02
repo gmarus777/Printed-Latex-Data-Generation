@@ -13,6 +13,75 @@ Also see [KDDCUP paper](https://www.cs.cornell.edu/home/kleinber/kddcup2003.pdf)
 
 ## How to generate data
 The easiest way to generate data is via Jupyter Notebook `Data generation.ipynb` located in folder `Jupyter Notebooks/`.
+See section Generate using Jupyter Notebook Example for step-by-step instructions.
+
+
+Final outpus is located in `Data` folder.
+
+Final outputs
+- folder `generated_png_images` contianing PNG images
+- `corresponding_png_images.txt` each new line contains png images filename for the folder `generated_png_images`
+- `final_png_formulas.txt` each new line contains a carresponing LaTex formula
+- folder `raw_data` containing raw downaloded data
+- folder `temporary_data` containing formulas from various stages of processing and svg images generated along the way
+
+<br />
+<br />
+
+
+## Generate using Jupyter Notebook Example
+
+
+### Step 1: Notebook Initialization
+
+Navigate to the `Jupyter Notebooks/` directory and open the provided notebook. Execute all cells except for the function:
+
+```python
+Generate_Printed_Tex(download_tex_dataset=False,
+                    generate_tex_formulas=False,
+                    number_tex_formulas_to_generate=1,
+                    generate_svg_images_from_tex=False,
+                    generate_png_from_svg=False)
+```
+
+We will invoke this function in subsequent steps with different flags.
+
+### Step 2: Dataset Download
+
+Use the `Generate_Printed_Tex` function to download the LaTeX dataset. Currently, the default is the KDD CUP dataset. However, you can specify URLs to any LaTeX-containing `.tar` files in the `configs.py`.
+
+Set only the `download_tex_dataset=True` flag, leaving the others set to `False`.
+
+### Step 3: Extract LaTeX Formulas
+
+With the dataset in place, process and extract LaTeX formulas:
+
+Set only the `generate_tex_formulas=True` flag and ensure all other flags are set to `False`.
+
+> **Note**: If `number_tex_formulas_to_generate` is less than 1001, only one `.tar` file will be parsed. For values greater than or equal to 1001, all downloaded `.tar` files will be processed.
+
+### Step 4: Convert LaTeX to SVG
+
+To convert preprocessed LaTeX formulas into SVG format:
+
+1. Navigate to the `tex_to_svg.py` file.
+2. Modify the constants:
+    - `MAX_NUMBER_TO_RENDER = 500*1000` (determines the maximum number of SVG LaTeX formulas to render)
+    - `THREADS = 8` (set to the number of CPU cores, ensure it's less than the total available cores on your system)
+
+Then, run the `Generate_Printed_Tex` function with the `generate_svg_images_from_tex=True` flag.
+
+### Step 5: Convert SVG to PNG
+
+Finally, transform the SVG images into PNG format:
+
+1. Before initiating the process, ensure you have `Inkscape` installed and accessible via the command line for MacOS. For Linux, the process will use `librsvg2`.
+2. Visit the `svg_to_png.py` file and adjust the parameters:
+    - `THREADS = 7` (set this to a value less than your available CPU cores)
+    - `PNG_WIDTH = 512`
+    - `PNG_HEIGHT = 64`
+
+Invoke the `Generate_Printed_Tex` function with the `generate_png_from_svg=True` flag to start the conversion.
 
 
 Running it will output all the data in `Data` folder.
@@ -21,6 +90,8 @@ Final outputs
 - folder `generated_png_images` contianing PNG images
 - `corresponding_png_images.txt` each new line contains png images filename for the folder `generated_png_images`
 - `final_png_formulas.txt` each new line contains a carresponing LaTex formula
+
+  
 - folder `raw_data` containing raw downaloded data
 - folder `temporary_data` containing formulas from various stages of processing and svg images generated along the way
 
