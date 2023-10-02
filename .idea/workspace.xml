@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8030c594-c08b-445c-915f-dbe1a68ba51e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jupyter Notebooks/Data generation.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Jupyter Notebooks/Data generation.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tex_to_svg.py" beforeDir="false" afterPath="$PROJECT_DIR$/tex_to_svg.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +27,9 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="hdfof6io" />
   </component>
   <component name="ProjectId" id="2JMkmfRAt98hoiLyWeq8oDETUD0" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -69,6 +73,7 @@
       <workItem from="1674146722169" duration="74000" />
       <workItem from="1678913943923" duration="215000" />
       <workItem from="1680461718979" duration="20035000" />
+      <workItem from="1696274936296" duration="1268000" />
     </task>
     <servers />
   </component>
