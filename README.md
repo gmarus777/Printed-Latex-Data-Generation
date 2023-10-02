@@ -51,6 +51,8 @@ We will invoke this function in subsequent steps with different flags.
 Use the `Generate_Printed_Tex` function to download the LaTeX dataset. Currently, the default is the KDD CUP dataset. However, you can specify URLs to any LaTeX-containing `.tar` files in the `configs.py`.
 
 Set only the `download_tex_dataset=True` flag, leaving the others set to `False`.
+![alt text](histogram.png)
+
 
 ### Step 3: Extract LaTeX Formulas
 
