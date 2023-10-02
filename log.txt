@@ -1,2 +1,12 @@
 2022-12-24 14:49:38,368 root  INFO     Script being executed: /Users/gregory/PROJECT_ML/PROJECT_AMINE/Printed-Latex-Data-Generation/preprocess_formulas.py
 2022-12-24 14:49:54,710 root  INFO     Jobs finished
+2023-10-02 16:28:25,108 root  INFO     Script being executed: /Users/nawafalansari/.vscodeProjects/projects/Printed-Latex-Data-Generation/preprocess_formulas.py
+2023-10-02 16:28:41,339 root  INFO     Jobs finished
+2023-10-02 16:33:38,073 root  INFO     Script being executed: /Users/nawafalansari/.vscodeProjects/projects/Printed-Latex-Data-Generation/preprocess_formulas.py
+2023-10-02 16:33:51,767 root  INFO     Script being executed: /Users/nawafalansari/.vscodeProjects/projects/Printed-Latex-Data-Generation/preprocess_formulas.py
+2023-10-02 16:34:45,101 root  INFO     Script being executed: /Users/nawafalansari/.vscodeProjects/projects/Printed-Latex-Data-Generation/preprocess_formulas.py
+2023-10-02 16:35:01,166 root  INFO     Jobs finished
+2023-10-02 16:48:44,132 root  INFO     Script being executed: /Users/nawafalansari/.vscodeProjects/projects/Printed-Latex-Data-Generation/preprocess_formulas.py
+2023-10-02 16:49:00,076 root  INFO     Jobs finished
+2023-10-02 16:49:44,332 root  INFO     Script being executed: /Users/nawafalansari/.vscodeProjects/projects/Printed-Latex-Data-Generation/preprocess_formulas.py
+2023-10-02 16:50:00,934 root  INFO     Jobs finished
