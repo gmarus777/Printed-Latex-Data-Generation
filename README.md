@@ -41,31 +41,37 @@ Final outputs
 
 ## How to set Hardcoded Parameters
 
-#### Set parsing formula length during parsing .tex/.tar files
+#### 1. Set parsing formula length during parsing .tex/.tar files
 In `download_data_utils.py` 
 - Max formula Length in bytes (line 24) MAX_FORMULA_LENGTH_in_Bytes = 1024
 - Min formula Length in bytes (line 25) MIN_FORMULA_LENGTH_BYTES = 40
 
-#### Provide different .tex/.tar files for parsing
-In `configs.py` (line 44)  change `metadata` to the local/remote location of your files
+#### 2. Provide different .tex/.tar files for parsing
+In `configs.py` 
+- (line 44)  change `metadata` to the local/remote location of your files
 
 
-#### Provide different .tex/.tar files for parsing
-In `configs.py` (line 44)  change `metadata` to the local/remote location of your files
+#### 3. Provide different .tex/.tar files for parsing
+In `configs.py` 
+- (line 44)  change `metadata` to the local/remote location of your files
 
 
-#### Add/Remove Filter-Out-Words when parsing .tex files
-In `configs.py` (line 42)  alter the list in  `FILTER_OUT_WORDS = ['%', r'\\label',...`
+#### 4. Add/Remove Filter-Out-Words when parsing .tex files
+In `configs.py` 
+- (line 42)  alter the list in  `FILTER_OUT_WORDS = ['%', r'\\label',...`
 
 
-#### Set DPI for generated .png images
-In `svg_to_png.py` (line 176) add flags `--dpi-x=96 --dpi-y=96`  with custom dpi to `png_generation_rsvg = f" rsvg-convert  --width=1024 --height=128 --dpi-x=96 --dpi-y=96` 
+#### 5. Set DPI for generated .png images
+In `svg_to_png.py` 
+- (line 176) add flags `--dpi-x=96 --dpi-y=96`  with custom dpi to `png_generation_rsvg = f" rsvg-convert  --width=1024 --height=128 --dpi-x=96 --dpi-y=96` 
 
 #### Set Image sizes for generated .png images
-In `svg_to_png.py` (line 176) add flags `--width=1024 --height=128`  with custom dimensions to `png_generation_rsvg = f" rsvg-convert  --width=1024 --height=128 --dpi-x=96 --dpi-y=96` 
+In `svg_to_png.py` 
+- (line 176) add flags `--width=1024 --height=128`  with custom dimensions to `png_generation_rsvg = f" rsvg-convert  --width=1024 --height=128 --dpi-x=96 --dpi-y=96` 
 
 
-
+<br />
+<br />
 
 ## Generate using Jupyter Notebook Example
 
