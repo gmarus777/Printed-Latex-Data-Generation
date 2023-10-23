@@ -65,7 +65,7 @@ In `configs.py`
 In `svg_to_png.py` 
 - (line 176) add flags `--dpi-x=96 --dpi-y=96`  with custom dpi to `png_generation_rsvg = f" rsvg-convert  --width=1024 --height=128 --dpi-x=96 --dpi-y=96` 
 
-#### Set Image sizes for generated .png images
+#### 6. Set Image sizes for generated .png images
 In `svg_to_png.py` 
 - (line 176) add flags `--width=1024 --height=128`  with custom dimensions to `png_generation_rsvg = f" rsvg-convert  --width=1024 --height=128 --dpi-x=96 --dpi-y=96` 
 
