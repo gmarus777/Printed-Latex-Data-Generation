@@ -4,6 +4,8 @@ Python and JS tools for generating Printed Latex Dataset (images of tex formulas
 Also see [KDDCUP paper](https://www.cs.cornell.edu/home/kleinber/kddcup2003.pdf).
 <br />
 
+You can download a prebuilt dataset 230k from [here](https://zenodo.org/record/7738969#.ZBJJSi-B2Lc).
+<br />
 **Note: parsing for ArXiv, Wikipedia and Stackexchange sources are coming.** 
 **Note: One can use any .tar files with LaTex formulas to parse, need to manually add it to the folder.** 
 
