@@ -14,8 +14,10 @@ Download a prebuilt dataset 230k from [here](https://zenodo.org/record/7738969#.
 
 <br />
 
-**Note: parsing for ArXiv, Wikipedia and Stackexchange sources are coming.** 
-**Note: One can use any .tar files with LaTex formulas to parse, need to manually add it to the folder.** 
+
+
+**Note: One can use any .tar files with LaTex formulas to parse, need to manually add it to the folder.** <br />
+**Parsing for ArXiv, Wikipedia and Stackexchange sources are coming.** 
 
 
 
