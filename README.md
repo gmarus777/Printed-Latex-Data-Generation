@@ -8,6 +8,8 @@ Also see [KDDCUP paper](https://www.cs.cornell.edu/home/kleinber/kddcup2003.pdf)
 
 <br />
 
+Download a prebuilt dataset 230k from [here](https://zenodo.org/record/7738969#.ZBJJSi-B2Lc).
+
 
 
 <br />
@@ -16,9 +18,7 @@ Also see [KDDCUP paper](https://www.cs.cornell.edu/home/kleinber/kddcup2003.pdf)
 **Note: One can use any .tar files with LaTex formulas to parse, need to manually add it to the folder.** 
 
 
-<br />
-Download a prebuilt dataset 230k from [here](https://zenodo.org/record/7738969#.ZBJJSi-B2Lc).
-<br />
+
 
 ## How to generate data
 The easiest way to generate data is via Jupyter Notebook `Data generation.ipynb` located in folder `Jupyter Notebooks/`.
