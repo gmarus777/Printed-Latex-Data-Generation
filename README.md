@@ -51,34 +51,21 @@ Some Dataset im2latex 230k Characteristics:
 <br />
 
 ## Depenencies
-1. Tested with Python 3.9.7 and [Anaconda version 2021.11] (https://repo.anaconda.com/archive/Anaconda3-2021.11-Linux-x86_64.sh)
-2. `pip install opencv-python`
-3. `pip install smart_open`
-4. For Tex to SVG [see](https://www.npmjs.com/package/tex2svg):
-
-    `sudo apt install nodejs npm`\
-    `sudo npm install --global mathjax-node-cli`
-     
-
-5. For SVG to PNG:
-
-
-  Linux:
-  https://ubuntu.pkgs.org/20.04/ubuntu-universe-arm64/librsvg2-bin_2.48.2-1_arm64.deb.html
-  
-  
-  `sudo apt install librsvg2-bin`
-  
-  <br />
-
-  For MacOS:
-  Download [Inkscape](https://inkscape.org), also see [here](https://stackoverflow.com/questions/9853325/how-to-convert-a-svg-to-a-png-with-imagemagick) 
-  
- 
+1. Docker, and make sure that docker daemon is ruuning. 
 
 
 <br />
 <br />
+
+##  Usage 
+1. Clone the repo. 
+2. Go to the repo folder.
+3. run pip install -e . 
+4. To see help run: 
+```
+latex-generator --help
+```
+
 
 ## Contents
 - `Printed_Tex.py`
