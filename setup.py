@@ -1,8 +1,8 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='your-package-name',
-    version='0.1',
+    name='latex-generator',
+    version='0.2',
     package_dir={'': 'src'},  # Tell setuptools that your package (source code) resides in the 'src' directory
     packages=find_packages(where='src'),
     include_package_data=True,

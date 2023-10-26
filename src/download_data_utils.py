@@ -21,8 +21,6 @@ from configs import PrintedLatexDataConfig
 
 
 # TODO: integrate the variables below
-MAX_FORMULA_LENGTH_in_Bytes = 1024
-MIN_FORMULA_LENGTH_BYTES = 40
 
 
 
@@ -126,7 +124,7 @@ class ImageProcessor:
 
 
 # unpacks all downloaded tars
-def _unpack_tars():
+def _unpack_tars(max_formula_size: int, min_formula_size: int):
 
 
     if not Path.exists(PrintedLatexDataConfig.UNPROCESSED_FORMULA_FILENAME):
@@ -149,7 +147,7 @@ def _unpack_tars():
 
                 tar.extract(latex_name)
                 latex = open(latex_name, encoding="utf8", errors='ignore').read()
-                formulas.extend(_get_formulas(latex))
+                formulas.extend(_get_formulas(latex, max_formula_size, min_formula_size))
                 os.remove(latex_name)
 
                 #os.rmdir(latex_name)
@@ -168,7 +166,7 @@ def _unpack_tars():
 
 
 # unpacks one tar and writes respective formulas in formula.txt (FOR TESTING PURPOSES)
-def _unpack_a_tar():
+def _unpack_a_tar(max_formula_size: int, min_formula_size: int):
     if not Path.exists(PrintedLatexDataConfig.UNPROCESSED_FORMULA_FILENAME):
         directory = PrintedLatexDataConfig.CHROME_RAW_DATA_DIRNAME
         output_folder = PrintedLatexDataConfig.NORMALIZED_FORMULAS_DIR
@@ -191,7 +189,7 @@ def _unpack_a_tar():
 
             tar.extract(latex_name)
             latex = open(latex_name, encoding="utf8", errors='ignore').read()
-            formulas.extend(_get_formulas(latex))
+            formulas.extend(_get_formulas(latex, max_formula_size, min_formula_size))
             os.remove(latex_name)
 
             #os.rmdir(latex_name)
@@ -258,11 +256,14 @@ def _generate_svg_images():
     os.chdir(PrintedLatexDataConfig.ROOT_DIRNAME)
     os.system(PrintedLatexDataConfig.svg_generation_script_command)
 
-def _turn_svg_to_png():
+
+
+
+def _turn_svg_to_png(dpi_x: int, dpi_y: int, width: int, height: int):
     os.chdir(PrintedLatexDataConfig.ROOT_DIRNAME)
     os.system(PrintedLatexDataConfig.png_generation_script_command)
 
-def _get_formulas(latex: str):
+def _get_formulas(latex: str, max_formula_size: int, min_formula_size: int):
     """ Returns detected latex formulas from given latex string
     Returns list of formula strings"""
 
@@ -278,7 +279,7 @@ def _get_formulas(latex: str):
         res = re.findall(pattern, latex, re.DOTALL)
         # Remove short ones
         res = [x.strip().replace("\n", "").replace("\r", "") for x in res if
-               MAX_FORMULA_LENGTH_in_Bytes > len(x.strip()) > MIN_FORMULA_LENGTH_BYTES]
+               max_formula_size > len(x.strip()) > min_formula_size]
         ret.extend(res)
     return ret
 

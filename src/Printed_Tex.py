@@ -1,5 +1,5 @@
 from pathlib import Path
-from download_data_utils import _download_raw_dataset_from_list, ImageProcessor, _unpack_a_tar,  _unpack_tars, _normalize_latex_data, _clean_formulas, _generate_svg_images, _turn_svg_to_png
+from download_data_utils import _download_raw_dataset_from_list, ImageProcessor, _unpack_a_tar,  _unpack_tars, _normalize_latex_data, _clean_formulas, _generate_svg_images, _turn_svg_to_png, _get_formulas
 from configs import PrintedLatexDataConfig
 
 
@@ -44,7 +44,16 @@ def Generate_Printed_Tex(download_tex_dataset = False,
                 number_tex_formulas_to_generate=150,
                 generate_svg_images_from_tex = False,
                 generate_png_from_svg = False,
-                number_png_images_to_use_in_dataset=120):
+                number_png_images_to_use_in_dataset=120, 
+                max_formula_size=1024,
+                minimum_formula_size=40,
+                filter_words_file=None,
+                urls_file=None,
+                dpi_x=100,
+                dpi_y=100,
+                width=512,
+                height=64
+                ):
     '''
            Printed Tex Data Module Parameters:
 
@@ -66,9 +75,9 @@ def Generate_Printed_Tex(download_tex_dataset = False,
 
     if generate_tex_formulas == True:
         if number_tex_formulas_to_generate < 1001:
-            _unpack_a_tar()
+            _unpack_a_tar(max_formula_size, minimum_formula_size)
         else: 
-            _unpack_tars()
+            _unpack_tars(max_formula_size, minimum_formula_size)
         _normalize_latex_data()
         _clean_formulas()
 
@@ -77,4 +86,28 @@ def Generate_Printed_Tex(download_tex_dataset = False,
         _generate_svg_images()
 
     if generate_png_from_svg == True:
-        _turn_svg_to_png()
+        _turn_svg_to_png(dpi_x, dpi_y, width, height)
+
+
+
+        
+
+
+
+
+def extract_formulas(args): 
+    latex_file_path = args.path
+    latex = get_content_from_file(latex_file_path)
+    formulas = _get_formulas(latex)
+    save_formulas_to_file(formulas, args)
+
+
+def get_content_from_file(path):
+    with open(path, "r") as f:
+        return f.read()
+    
+def save_formulas_to_file(formulas, args):
+    with open(args.output, "w") as f:
+        for formula in formulas:
+            f.write(formula + "\n")
+
